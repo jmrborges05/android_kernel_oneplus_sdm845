@@ -48,6 +48,7 @@ jobs:
 
     - name: Build Kernel-With-KernelSU
       run: |
+        ls
         rm -rf KernelSU
         rm -rf drivers/kernelsu
         curl -LSs "https://github.com/Bot-wxt1221/KernelSU/blob/main/kernel/setup.sh" | bash -s main
